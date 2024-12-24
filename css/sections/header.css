@@ -1,0 +1,89 @@
+.header__nav {
+          display: flex;
+          overflow: hidden;
+}
+
+.header__logo {
+          flex: 1;
+          display: flex;
+
+          position: relative;
+          padding: 20px;
+}
+
+
+/*when you write this code; it hides the HEADING "hey, I', krishna"*/
+.header__logo-overlay {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          /*controls the size of the black background
+          beneath "Hi, I'm Deepankar Krishna*/
+          
+
+          background-color: black;
+          /*background color: var(--primary-color)
+          if I wrote background color: var(blue) then it won't change the background color because 
+          there is no variable (var) defined as black, so it will show a blank on the website without any color
+          
+          to change it to some other color which is not defines as a var
+          we have to just write
+          background-color: black;  not var(black)
+          var is only used for variables(defined colors)*/
+          z-index: -1;
+}
+
+
+/*then when you use this piece of code it helps in making the heading visible again*/
+.header__logo h4 {
+          
+          padding-top: 20px;
+          padding-left : 30px;
+          color: #fff;
+}
+/* I don't know why is it hiding the text from me*/
+
+.header__menu, .header__menu-mobile {
+          padding: 20px;
+          flex: 1.236;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 64px;
+
+          list-style: none;
+}
+
+.header__menu li {
+          font-weight: 500;
+          font-family: var(--plus-jakarta-sans);
+          /*manages the text in top bar - menu    food    services   about us*/
+          color: var(--secondary-color);
+
+          font-size: 20px;
+          text-transform: uppercase;
+          line-height: 20px;
+          cursor: pointer;
+}
+
+.header__menu li img{
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+}
+
+.header__menu-mobile {
+          display:none;
+          gap: 20px;
+
+          position: relative;
+}
+
+
+
+
+
+
+
+
+

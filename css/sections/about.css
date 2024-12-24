@@ -1,0 +1,122 @@
+.about-us{
+          display: flex;
+          min-height: 720px;
+          overflow: hidden;
+}
+
+/*the division that contains sushi3, learn more, sushi2*/
+.about-us__image{
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          background: var(--color-white);
+
+          position: relative;
+}
+
+.about-us__image div {
+          padding: 32px 64px;
+
+          flex: 1; /*this will also 50% percent of the space
+          because .about-us__content is also set to flex: 1     */
+          display: flex;
+          align-items: center;
+
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+}
+
+.about-us__image-sushi3 {
+          /*bottom border for the sushi 3 image*/
+          border-bottom: 8px solid var(--color-creamson);
+          background-image: url("../../assets/about_bg1.png")
+
+}
+
+.about-us__image-sushi2 {
+          /*bottom border for the sushi 3 image*/
+          background-image: url("../../assets/about_bg2.png")
+
+}
+
+.about-us__image-sushi3 img {
+          width: 225px;
+          height: 200px;
+}
+
+.about-us__image-sushi2 img {
+          width: 240px;
+          height: 160px;
+}
+
+/*this is how he has designed the 'learn more' button - this is important*/
+.about-us__button {
+          position: absolute;
+          right: 0;
+          padding: 12px 32px;
+          /*12px is the size of the box horizontally
+          32px is the size of the box vertically*/
+          min-height: 64px;
+          /*changes the height of the box*/
+
+          background: var(--secondary-color);
+          border-radius: 32px 0 0 32px;
+          /*the 32px 0 0 32px represent the four edges of the box
+          radius of the first edge is 32px, second edge is 0, third is also 0
+          and fourth edge is 32px
+          that's how that button is curved on the left but flat on the right
+          VERY IMPORTANT DESIGN SYNTAX*/
+          border: 0;
+          outline: 0;
+
+          /*changes the color of the text in the box*/
+          color: #fff;
+
+          font-family: var(--plus-jakarta-sans);
+
+          font-weight: 500; /*to make the font bolder, thick font, to make it BOLD*/
+          font-size: 18px;
+          line-height: 23px;
+          /*sets the height of a line box*/
+
+          cursor: pointer;
+
+}
+
+/*this is the arrow thing in the 'learn more' button*/
+.about-us__button img {
+          object-fit: contain;
+          margin-left: 32px;
+          /*this gives the arrow a space of 32px, from the 'learn more' text*/
+
+}
+
+.about-us__content {
+          padding: 64px;
+
+          flex: 1; /*this will take 50% of the space
+          .about-us__image img also has flex : 1*/
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

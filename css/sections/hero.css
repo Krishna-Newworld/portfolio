@@ -1,0 +1,236 @@
+.hero{
+          display: flex;
+          min-height: calc(100vh - 74px);
+          /*so that red color section in 
+          which takes the full height of the screen - the height of that 
+          black background over the text 'I'm deepankar Krishna'*/
+          overflow: hidden;
+
+}
+
+.hero-image {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          position:relative;
+          z-index: 5;
+}
+
+.hero-image img {
+          width: 120%;
+          height: 100%;
+          object-fit: contain;
+}
+
+/*it will be shown on top of other elements*/
+.hero-image__overlay {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+
+          background-color: var(--primary-color);
+          z-index: -1;
+
+}
+
+/*the text - ambition outweighs ...etc, etc*/
+.hero-image h2{
+          position: absolute;
+          bottom: 0;
+          padding-top: 10px;
+          padding-left: 10px;
+
+          /*font-family: var(--playfair-display);
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 30px;
+          color: black;*/ 
+          
+
+
+}
+
+.hero-content {
+          flex: 1.22;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+}
+
+/*manages the position of the buttons 'order now' & 'how to order'*/
+.hero-content-info {
+          padding: 64px;
+          flex: 1;
+          display: flex; /*flexible display for flexible design*/
+          justify-content: center;
+          flex-direction: column;
+}
+
+/*the text - I build full stack applications when I'm bored*/
+.hero-content-info h1{
+          font-size: 80px;
+          font-weight: 600px;
+          font-family: var(--playfair-display);
+          color: var(--secondary-color);
+}
+
+/*the text - this is my accountability....*/
+.hero-content-info p{
+          margin : 32px 0 0 32px;
+         
+          font-family: var(--plus-jakarta-sans);
+          color: var(--secondary-color);
+          font-size: 18px;
+          font-weight: 400;
+
+}
+
+/*The buttons*/
+.hero-content__buttons {
+          
+          margin: 41px 0 0 41px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 36px;
+          
+}
+
+/*order button*/
+.hero-content__order-button {
+          padding: 20px;
+          border-radius: 36px;
+          min-width: 212px;
+          outline: none;
+          border: none;
+          background: var(--secondary-color);
+
+          /*to make the button clickable*/
+          cursor: pointer;
+
+          color: #fff;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+}
+
+/*play button*/
+.hero-content__play-button {
+          border: none;
+          outline: none;
+          background: transparent;
+
+          display: flex;
+          align-items: center;
+
+          font-size: 16px;
+          line-height: 19px;
+          color: var(--black-200);
+          font-family: var(--plus-jakarta-sans);
+
+          cursor: pointer;
+}
+
+/*image of the play button*/
+.hero-content__play-button img{
+          margin-right: 12px;
+
+          width: 46px;
+          height: 46px;
+          object-fit: contain;
+}
+
+/*the porblems was I was writing
+.hero-content__testimonial ('testimonial' without 's')
+instead of 
+.hero-content__testimonials (not 'testimonial')
+that's why there was no color change, because the name was incorrectly typed
+*/
+.hero-content__testimonials {
+          padding: 32px 64px;
+
+          display: flex;
+          flex-wrap: wrap;
+          /*flex wrap allows text to be written in
+          the next line if it exceeds the width of the 
+          container(testimonial container in this case) allowing
+          flexible design so text can adjust based on multiple screen sizes*/
+          gap: 20px;
+          
+          background: var(--color-white);
+}
+
+.hero-content__customer {
+          flex: 1;
+          /*flex-direction: column;
+          use this two align items one below the others*/
+          gap: 10px;
+          align-items:end;
+       
+}
+
+/*the '100K' text*/
+.hero-content__customer h4 {
+          font-size: 62px;
+          font-weight: 400;
+          font-family: var(--playfair-display);
+          
+}
+
+/*income target for this year text*/
+.hero-content__customer p {
+          font-size: 25px;
+          font-weight: 400;
+          font-family: var(--plus-jakarta-sans);
+          color: var(--secondary-color);
+          opacity: 1;
+
+}
+
+/*the review block*/
+.hero-content__review {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          padding-left: 20px;
+          border: 1px solid rgba(2, 2, 2, 0.1);
+          /*creates a border around the text*/
+}
+
+/*image of the professional*/
+.hero-content__review img {
+          /*object fit is used to 
+          make images and videoa adapt to 
+          different screen sizes*/
+          object-fit: contain;
+}
+
+/*The wake up call text by professional*/
+.hero-content__review p{
+          
+          font-family: var(--plus-jakarta-sans);
+          color: var(--secondary-color);
+
+}
+
+.hero-content__review {
+          
+          object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
